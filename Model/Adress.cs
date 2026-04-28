@@ -2,10 +2,10 @@
 
 namespace Model
 {
-    public class Address
+    public class Adress
     {
         #region Properties
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Street { get; set; } = string.Empty;
         public string Number { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
@@ -15,12 +15,12 @@ namespace Model
         #endregion
 
         #region Constructors
-        public Address() 
+        public Adress() 
         { 
 
         }
 
-        public Address(
+        public Adress(
             int id,
             string street,
             string number,
@@ -30,7 +30,7 @@ namespace Model
             string federalState
             )
         {
-            this.id = id;
+            this.Id = id;
             Street = street;
             Number = number;
             City = city;

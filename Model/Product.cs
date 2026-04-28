@@ -3,14 +3,20 @@ namespace Model
 {
     public class Product
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public double Price { get; set; }
 
         #region Constructors
+
+        public Product()
+        {
+
+        }
+
         public Product(int id, string name, double price)
         {
-            this.id = id;
+            this.Id = id;
             Name = name;
             Price = price;
         }

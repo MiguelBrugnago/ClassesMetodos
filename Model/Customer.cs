@@ -11,8 +11,8 @@ namespace Model
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Phone { get; set; } = string.Empty;
-        public Address? HomeAddress { get; set; }
-        public Address ShippingAddress { get; set; } = null!;
+        public Adress? HomeAddress { get; set; }
+        public Adress ShippingAddress { get; set; } = null!;
 
         #region Constructors
         public Customer()
@@ -26,8 +26,8 @@ namespace Model
             string lastName,
             string email,
             string phone,
-            Address? homeAddress,
-            Address shippingAddress
+            Adress? homeAddress,
+            Adress shippingAddress
             )
         {
             Id = id;
